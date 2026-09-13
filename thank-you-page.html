@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You — Consultation Booked</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C9A96E;--gold-light:#E8D5A3;--deep:#0A0A0F;--deep2:#12121A;--cream:#F5EDD8;--muted:#8A8A9A;--white:#FAFAF8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:radial-gradient(circle at 50% 20%,rgba(201,169,110,.14),transparent 35%),radial-gradient(circle at 20% 80%,rgba(201,169,110,.06),transparent 30%),var(--deep);color:var(--white);font-family:"DM Sans",sans-serif;display:flex;align-items:center;justify-content:center;padding:30px 20px}
+.orb{position:fixed;width:420px;height:420px;border-radius:50%;border:1px solid rgba(201,169,110,.08);box-shadow:0 0 120px rgba(201,169,110,.06);pointer-events:none}
+.orb.one{top:-220px;right:-120px}.orb.two{bottom:-260px;left:-150px}
+.card{width:min(700px,100%);text-align:center;padding:64px 34px 58px;border:1px solid rgba(201,169,110,.24);background:rgba(18,18,26,.82);backdrop-filter:blur(14px);border-radius:24px;box-shadow:0 25px 90px rgba(0,0,0,.4);position:relative;z-index:2}
+.check{width:78px;height:78px;border-radius:50%;margin:0 auto 28px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold-light);font-size:36px;box-shadow:0 0 45px rgba(201,169,110,.16)}
+.eyebrow{color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700;margin-bottom:14px}
+h1{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,8vw,76px);line-height:.95;font-weight:600;margin-bottom:22px;color:var(--cream)}
+.lead{max-width:530px;margin:0 auto 34px;color:#c9c9d2;font-size:17px;line-height:1.75}
+.next{color:var(--muted);font-size:14px;margin-bottom:15px}
+.whatsapp{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-width:260px;padding:17px 28px;border-radius:999px;background:var(--gold);color:var(--deep);text-decoration:none;font-weight:700;font-size:15px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;box-shadow:0 12px 35px rgba(201,169,110,.2)}
+.whatsapp:hover{transform:translateY(-2px);background:var(--gold-light);box-shadow:0 16px 45px rgba(201,169,110,.28)}
+.small{margin-top:22px;color:#686875;font-size:12px}
+@media(max-width:600px){.card{padding:48px 22px 42px}.lead{font-size:15px}.whatsapp{width:100%}}
+</style>
+</head>
+<body>
+<div class="orb one"></div><div class="orb two"></div>
+<main class="card">
+<div class="check">✓</div>
+<div class="eyebrow">You're all set</div>
+<h1>Thank You!</h1>
+<p class="lead">Your consultation booking has been received successfully. Take the next step and message us on WhatsApp so we can connect with you and help you get started.</p>
+<div class="next">Click below to continue on WhatsApp</div>
+<a class="whatsapp" href="https://wa.link/kbweze" target="_blank" rel="noopener noreferrer">Continue on WhatsApp&nbsp; →</a>
+<div class="small">We look forward to speaking with you.</div>
+</main>
+</body>
+</html>
